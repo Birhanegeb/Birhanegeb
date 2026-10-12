@@ -1,12 +1,13 @@
 # Hi, I'm Birhane 👋
 
-### Data Engineer | Information Technology | Software Development
+### Data Engineer | Information Technology- Software Systems
 
-I have an M.Sc. in Data Engineering from Constructor University, Germany, and a B.Sc. in Information Technology.
+M.Sc. in Data Engineering from Constructor University, Germany
+B.Sc. in Information Technology from Mekelle University.
 
 My main area is **Data Engineering**. I work with data pipelines, ETL processes, data processing, databases, and workflow automation. I use **Python, SQL, Apache Airflow, PySpark, Docker, and AWS** to build and manage data workflows.
 
-My background in **Information Technology** also gives me a good understanding of how software systems work. I have experience and knowledge in **APIs, backend services, databases, web applications, JavaScript development, and how different parts of a software system communicate with each other**.
+My background in **Information Technology** also gives me a good understanding of how software systems work. I have experience and knowledge in **APIs, backend services, databases, web applications, JavaScript, and how different parts of a software system communicate with each other**.
 
 I like working on projects where data and software come together - from getting data through an API, processing and storing it, to making it available for applications and analysis.
 
@@ -49,13 +50,8 @@ A machine learning project for predicting equipment failures using industrial se
 
 **Python · Pandas · Scikit-learn · Machine Learning**
 
-### 📊 GitHub
+### 🌐 Reach Me online
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Birhanegeb&show_icons=true&theme=github_dark&hide_border=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Birhanegeb&layout=compact&theme=github_dark&hide_border=true)
-
-### 🌐 Links
-
-- 💻 [GitHub](https://github.com/Birhanegeb)
-- 🌍 [Portfolio](https://birhanegeb.github.io/)
+- [GitHub](https://github.com/Birhanegeb)
+- [Portfolio](https://birhanegeb.github.io/)
+- [Linkedin](https://www.linkedin.com/in/bgeb721/)
