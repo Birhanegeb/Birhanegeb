@@ -1,6 +1,6 @@
 # Hi there, I'm Birhane Gebrewahid 👋
 
-### Data Engineer | Software & Data Systems | Information Technology
+### Data Engineer | Information Technology
 
 I'm a Data Engineer with an M.Sc. in Data Engineering from Constructor University, Germany, and a B.Sc. in Information Technology.
 
