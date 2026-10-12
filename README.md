@@ -1,81 +1,61 @@
-# Hi there, I'm Birhane Gebrewahid 👋
+# Hi, I'm Birhane 👋
 
-### Data Engineer | Information Technology
+### Data Engineer | Information Technology | Software Development
 
-I'm a Data Engineer with an M.Sc. in Data Engineering from Constructor University, Germany, and a B.Sc. in Information Technology.
+I have an M.Sc. in Data Engineering from Constructor University, Germany, and a B.Sc. in Information Technology.
 
-My main focus is **Data Engineering**, with experience designing and building data pipelines that collect, process, transform, and store data for analytics and downstream applications. I work with tools such as **Python, SQL, Apache Airflow, PySpark, Docker, and AWS** to build automated, reliable, and reproducible data workflows.
+My main area is **Data Engineering**. I work with data pipelines, ETL processes, data processing, databases, and workflow automation. I use **Python, SQL, Apache Airflow, PySpark, Docker, and AWS** to build and manage data workflows.
 
-My background in **Information Technology** also gives me a broad understanding of how software systems work beyond the data layer. I have knowledge of **APIs, backend services, databases, web applications, system architecture, and JavaScript development**, which helps me understand how different components of a software system communicate and work together.
+My background in **Information Technology** also gives me a good understanding of how software systems work. I have experience and knowledge in **APIs, backend services, databases, web applications, JavaScript development, and how different parts of a software system communicate with each other**.
 
-I enjoy working across the different stages of a system - from connecting to APIs and collecting data, to processing and storing it, and finally making it available for applications, analytics, and visualization.
+I like working on projects where data and software come together - from getting data through an API, processing and storing it, to making it available for applications and analysis.
 
-### 🛠️ Technologies I Work With
+### 🛠️ Technologies
 
-- 🐍 **Python** - Data engineering, automation, APIs, and backend development
-- 🗄️ **SQL** - Data querying, transformation, database management, and analytics
-- ⚙️ **Apache Airflow** - Workflow orchestration and automated ETL pipelines
-- ⚡ **PySpark** - Distributed data processing and large-scale transformations
-- 🐳 **Docker** - Containerization and reproducible development environments
-- ☁️ **AWS** - Cloud infrastructure and data engineering workflows
-- 🌐 **APIs** - API integration, data ingestion, and backend communication
-- 💻 **JavaScript / React** - Web application and frontend development
-- 🗃️ **PostgreSQL** - Relational databases and data storage
-- 🐧 **Linux** - Development, system administration, and deployment
+- **Python** - Data engineering, automation, APIs, and backend development
+- **SQL** - Data querying, transformation, and database work
+- **Apache Airflow** - ETL and workflow orchestration
+- **PySpark** - Data processing and transformations
+- **Docker** - Containers and development environments
+- **AWS** - Cloud and data engineering
+- **PostgreSQL** - Relational databases
+- **JavaScript / React** - Web and frontend development
+- **FastAPI** - Backend APIs
+- **Linux** - Development and system administration
 
-### 🚀 What I Build
+### 🚀 Projects
 
-I particularly enjoy building:
+**🚦 Smart City Traffic ETL**
 
-- Data ingestion and ETL/ELT pipelines
-- Automated and scheduled data workflows
-- API-based data collection systems
-- Distributed data processing pipelines
-- Cloud-based data solutions
-- Data-driven web applications
-- Software systems that connect APIs, databases, backend services, and data pipelines
+A micro-batch ETL pipeline that collects traffic data through the TomTom API and processes it using Airflow and PySpark.
 
-### 📌 Featured Projects
+**Python · Airflow · PySpark · Docker · Terraform · PostgreSQL · AWS · Superset**
 
-#### 🚦 Smart City Traffic ETL Pipeline
+**🌡️ IoT Data Pipeline**
 
-A reproducible and self-healing micro-batch ETL pipeline for processing smart city traffic data.
-
-**Python · Apache Airflow · PySpark · Docker · Terraform · PostgreSQL · AWS · Apache Superset**
-
-#### 🌡️ IoT Data Pipeline
-
-An IoT system that collects sensor data, sends it through an API, stores it in a database, and provides a web interface for visualization.
+An IoT project that collects sensor data from an ESP32, sends it through an API, stores it in PostgreSQL, and displays the data through a web application.
 
 **Python · FastAPI · PostgreSQL · React · ESP32 · DHT11**
 
-#### 🥇 Gold Price ETL & Prediction Pipeline
+**🥇 Gold Price ETL & Prediction**
 
-An automated data pipeline combining financial data, news sentiment analysis, and machine learning for gold price analysis and prediction.
+An ETL pipeline that combines gold price data and news sentiment analysis with machine learning.
 
-**Python · Apache Airflow · SQL · Machine Learning**
+**Python · Airflow · SQL · Machine Learning**
 
-#### 🤖 AI Predictive Maintenance
+**🤖 AI Predictive Maintenance**
 
 A machine learning project for predicting equipment failures using industrial sensor data.
 
 **Python · Pandas · Scikit-learn · Machine Learning**
 
----
-
-### 📊 GitHub Statistics
+### 📊 GitHub
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Birhanegeb&show_icons=true&theme=github_dark&hide_border=true)
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Birhanegeb&layout=compact&theme=github_dark&hide_border=true)
 
----
-
-### 🌐 Connect With Me
+### 🌐 Links
 
 - 💻 [GitHub](https://github.com/Birhanegeb)
 - 🌍 [Portfolio](https://birhanegeb.github.io/)
-
----
-
-*Building data pipelines, software systems, and data-driven solutions.* 🚀
