@@ -6,7 +6,7 @@
 
 -B.Sc. in Information Technology from Mekelle University
 
-I build data pipelines and ETL processes with *Python, SQL, Apache Airflow, PySpark, Docker, and AWS*.
+I build data pipelines and ETL processes.
 
 My background in *Information Technology* gave me a solid understanding of how software systems work. I have experience with *APIs, backend services, databases, web applications, JavaScript, and how different parts of a software system communicate*.
 
