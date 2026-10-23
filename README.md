@@ -14,5 +14,5 @@ I am interested in working where data and software come together-from getting da
 ### 🌐 Reach Me online
 
 - [GitHub](https://github.com/Birhanegeb)
-- [Portfolio](https://birhanegeb.github.io/)
+- [Portfolio](https://birhanegeb.vercel.app)
 - [Linkedin](https://www.linkedin.com/in/bgeb721/)
