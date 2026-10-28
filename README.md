@@ -12,5 +12,5 @@ I am interested in working where data and software come together-from getting da
 - ## Tech Stack
 
 <!-- TECH-STACK-START -->
-Automatically detected technologies will appear here.
+
 <!-- TECH-STACK-END -->
