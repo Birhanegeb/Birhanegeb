@@ -8,3 +8,9 @@ I am interested in working where data and software come together-from getting da
 - [GitHub](https://github.com/Birhanegeb)
 - [Portfolio](https://birhanegeb.vercel.app)
 - [Linkedin](https://www.linkedin.com/in/bgeb721/)
+
+- ## Tech Stack
+
+<!-- TECH-STACK-START -->
+Automatically detected technologies will appear here.
+<!-- TECH-STACK-END -->
