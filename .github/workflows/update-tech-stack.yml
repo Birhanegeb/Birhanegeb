@@ -1,1 +1,113 @@
 
+name: Update README Tech Stack
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Detect and update tech stack
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json
+
+          root = Path(".")
+          found = set()
+
+          patterns = {
+              "Python": ["*.py", "requirements.txt", "pyproject.toml"],
+              "JavaScript": ["*.js", "*.jsx"],
+              "TypeScript": ["*.ts", "*.tsx"],
+              "React": ["package.json"],
+              "FastAPI": ["requirements.txt", "pyproject.toml"],
+              "Apache Airflow": ["dags/*.py"],
+              "PySpark": ["requirements.txt", "pyproject.toml"],
+              "Docker": ["Dockerfile", "docker-compose.yml",
+                         "compose.yml", "docker-compose.yaml"],
+              "Terraform": ["*.tf"],
+              "PostgreSQL": ["docker-compose.yml", "compose.yml",
+                             "requirements.txt"],
+              "AWS": ["*.tf", "template.yaml",
+                      "samconfig.toml"],
+              "Apache Superset": ["docker-compose.yml",
+                                  "compose.yml"],
+              "Node.js": ["package.json"],
+          }
+
+          files = [p for p in root.rglob("*") if p.is_file()
+                   and not any(part in {
+                       ".git", "node_modules", ".venv",
+                       "venv", "__pycache__"
+                   } for part in p.parts)]
+
+          for tech, globs in patterns.items():
+              for pattern in globs:
+                  for f in root.glob(pattern):
+                      if f.is_file():
+                          found.add(tech)
+                      elif f.is_dir():
+                          found.update([tech])
+
+          # Confirm framework and service names in project configs.
+          for f in files:
+              if f.name in {"package.json", "requirements.txt",
+                            "pyproject.toml", "docker-compose.yml",
+                            "compose.yml"}:
+                  try:
+                      content = f.read_text(errors="ignore").lower()
+                  except OSError:
+                      continue
+                  checks = {
+                      "React": ["react"],
+                      "FastAPI": ["fastapi"],
+                      "PySpark": ["pyspark"],
+                      "Apache Airflow": ["apache-airflow", "airflow"],
+                      "PostgreSQL": ["postgres", "psycopg"],
+                      "Apache Superset": ["superset"],
+                      "AWS": ["boto3", "aws"],
+                  }
+                  for tech, terms in checks.items():
+                      if any(term in content for term in terms):
+                          found.add(tech)
+
+          readme = Path("README.md")
+          if not readme.exists():
+              raise SystemExit("README.md not found")
+
+          text = readme.read_text()
+          start = "<!-- TECH-STACK-START -->"
+          end = "<!-- TECH-STACK-END -->"
+
+          if start not in text or end not in text:
+              raise SystemExit("Add the tech stack markers to README.md first")
+
+          stack = "\n".join(f"- {t}" for t in sorted(found))
+          replacement = f"{start}\n{stack}\n{end}"
+          before, rest = text.split(start, 1)
+          _, after = rest.split(end, 1)
+          readme.write_text(before + replacement + after)
+          PY
+
+      - name: Commit README changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet || (
+            git commit -m "Update detected tech stack" &&
+            git push
+          )
